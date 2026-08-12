@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="icon" type="image/jpg" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bless Card Radio</title>
+
+<meta property="og:title" content="Bless Card Radio">
+<meta property="og:description" content="Escucha nuestra señal en vivo">
+<meta property="og:image" content="https://amstreaming.github.io/blesscardradio/share.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amstreaming.github.io/blesscardradio/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bless Card Radio">
+<meta name="twitter:description" content="Escucha nuestra señal en vivo">
+<meta name="twitter:image" content="https://amstreaming.github.io/blesscardradio/share.png">
+
+<style>
+
+body{
+background-image:url("background.png");
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+
+color:#ffffff;
+font-family:Arial,sans-serif;
+text-align:center;
+
+padding:20px;
+padding-top:70px;
+
+min-height:100vh;
+}
+
+.logo{
+display:block;
+margin:0 auto;
+width:100%;
+max-width:550px;
+height:auto;
+}
+
+audio{
+width:100%;
+max-width:450px;
+}
+
+@media (max-width:768px){
+
+body{
+padding:15px;
+}
+
+h1{
+font-size:26px;
+}
+
+p{
+font-size:18px;
+}
+
+.logo{
+width:100%;
+max-width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div style="height:80px;"></div>
+
+<img src="logo.png" class="logo">
+
+<script id="sonic_js"
+data-port="8012"
+src="https://stream6.hcnetwork.net/cp/widgets.js?r=222">
+</script>
+
+<audio controls autoplay>
+
+<source
+src="https://stream6.hcnetwork.net/449/"
+type="audio/mpeg">
+
+Tu navegador no soporta audio HTML5.
+
+</audio>
+
+<h2>Oyentes conectados</h2>
+
+<div id="sonic_listeners"></div>
+
+</body>
+
+</html>
